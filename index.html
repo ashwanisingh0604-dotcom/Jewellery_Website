@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashvika Luxe — Jewelry Designed With Love</title>
+    <meta name="description" content="Handcrafted luxury Indian jewelry. Discover signature jhumkas, studs, and oxidized earrings designed with love by Ashvika Luxe."/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+<main class="bg-emerald-deep min-h-screen">
+
+    <!-- ===== HEADER ===== -->
+    <header class="sticky top-0 z-50 w-full bg-emerald-deep" style="border-bottom:1px solid rgba(212,168,87,0.15);">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
+            <!-- Logo -->
+            <a href="index.html" class="font-display text-2xl tracking-[0.25em] uppercase text-cream">
+                Ashvika<span class="text-gold">Luxe</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-9">
+                <a href="#hero" class="text-[13px] uppercase tracking-wider text-cream/80 hover:text-gold transition-colors">Home</a>
+                <a href="#about" class="text-[13px] uppercase tracking-wider text-cream/80 hover:text-gold transition-colors">About</a>
+                <a href="shop.html" class="text-[13px] uppercase tracking-wider text-cream/80 hover:text-gold transition-colors">Shop</a>
+                <a href="#contact" class="text-[13px] uppercase tracking-wider text-cream/80 hover:text-gold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-5 text-cream">
+
+                <!-- Search -->
+                <div class="search-wrapper">
+                    <button id="searchBtn" aria-label="Search" class="hover:text-gold transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.34-4.34"></path>
+                        </svg>
+                    </button>
+                    <div class="search-dropdown" id="searchDropdown">
+                        <input type="text" id="searchInput" placeholder="Search jewelry..." />
+                        <button class="search-submit-btn" id="searchSubmit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.34-4.34"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cart -->
+                <button id="cartBtn" aria-label="Cart" class="relative hover:text-gold transition-colors" style="display:flex;align-items:center;justify-content:center;padding:0;line-height:0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        <path d="M3.103 6.034h17.794"></path>
+                        <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
+                    </svg>
+                    <span id="cartBadge" class="absolute -top-2 -right-2 bg-gold text-ink text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center" style="display:none;">0</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" aria-label="Menu" class="lg:hidden hover:text-gold transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5h16"></path>
+                        <path d="M4 12h16"></path>
+                        <path d="M4 19h16"></path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="relative overflow-hidden bg-emerald-deep">
+        <div class="absolute inset-0 opacity-[0.04]" style="background-image:radial-gradient(circle at 20% 30%, var(--gold) 1px, transparent 1px);background-size:40px 40px;"></div>
+        <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 gap-12 px-6 py-20 lg:py-28 items-center relative">
+
+            <!-- Left Content -->
+            <div class="space-y-7">
+                <p class="eyebrow">— Jewelry Designed With Love</p>
+                <h1 class="font-display text-5xl md:text-6xl lg:text-7xl text-cream leading-[1.05] font-medium">
+                    The Perfect <em class="text-gold not-italic font-normal" style="font-style:italic;">Jewels</em>
+                    <br>
+                    For <span class="italic font-light text-gold-soft">You.</span>
+                </h1>
+                <p class="text-cream/70 text-base max-w-md leading-relaxed">
+                    Handcrafted heirlooms forged from tradition. Each piece tells a story — gold whispers, emerald promises, and silver songs from the bazaars of old India.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="shop.html" class="btn-gold">
+                        Buy Now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                    <a href="#shop" class="btn-outline-cream">Explore</a>
+                </div>
+                <div class="flex items-center gap-4 pt-8">
+                    <button class="w-10 h-10 rounded-full border border-cream/30 flex items-center justify-center text-cream hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"></path></svg>
+                    </button>
+                    <button class="w-10 h-10 rounded-full border border-cream/30 flex items-center justify-center text-cream hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                    <div class="flex gap-2 ml-3">
+                        <span class="w-8 h-[2px] bg-gold"></span>
+                        <span class="w-4 h-[2px] bg-cream/30"></span>
+                        <span class="w-4 h-[2px] bg-cream/30"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="relative flex items-center justify-center min-h-[420px] lg:min-h-[560px]">
+                <div class="hero-spotlight absolute inset-0 rounded-full"></div>
+                <div class="absolute w-[420px] h-[420px] rounded-full border border-gold/20"></div>
+                <div class="absolute w-[320px] h-[320px] rounded-full border border-gold/10"></div>
+                <img src="Assets/Mein_Model.png" alt="Model wearing Ashvika Luxe jewelry" width="600" height="620" class="relative z-10 max-h-[560px] w-auto object-contain drop-shadow-[0_25px_40px_rgba(0,0,0,0.5)]"/>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section class="bg-emerald-deep pb-20">
+        <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="product-card overflow-hidden flex flex-col items-center text-center group">
+                <div class="overflow-hidden rounded-xl w-full aspect-[4/3] bg-cream flex items-center justify-center">
+                    <img src="Assets/170390734942af7ca286cb8c54777d69b6c8c4a64e_thumbnail_750x999.webp" alt="Cradle Earrings" loading="lazy" width="400" height="300" class="product-img w-full h-full object-cover"/>
+                </div>
+                <h3 class="font-display text-2xl text-ink mt-5">Cradle Earrings</h3>
+                <a href="shop.html" class="mt-4 mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-widest text-ink/70 hover:text-gold transition-colors">
+                    Check More Products
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="product-card overflow-hidden flex flex-col items-center text-center group">
+                <div class="overflow-hidden rounded-xl w-full aspect-[4/3] bg-cream flex items-center justify-center">
+                    <img src="Assets/Drop_earings.jpg" alt="Drop Earrings" loading="lazy" width="400" height="300" class="product-img w-full h-full object-cover"/>
+                </div>
+                <h3 class="font-display text-2xl text-ink mt-5">Drop Earrings</h3>
+                <a href="shop.html" class="mt-4 mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-widest text-ink/70 hover:text-gold transition-colors">
+                    Check More Products
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="product-card overflow-hidden flex flex-col items-center text-center group">
+                <div class="overflow-hidden rounded-xl w-full aspect-[4/3] bg-cream flex items-center justify-center">
+                    <img src="Assets/Gold-earing.png" alt="Jhumka Earrings" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                </div>
+                <h3 class="font-display text-2xl text-ink mt-5">Jhumka Earrings</h3>
+                <a href="shop.html" class="mt-4 mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-widest text-ink/70 hover:text-gold transition-colors">
+                    Check More Products
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SIGNATURE COLLECTION ===== -->
+    <section class="bg-cream-light py-24 signature-collection">
+        <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <div class="space-y-6">
+                <p class="eyebrow">— Hand Crafted</p>
+                <h2 class="section-title text-ink">
+                    Signature <em class="text-gold italic font-normal">Collection</em>
+                </h2>
+                <p class="text-ink/70 max-w-md leading-relaxed">
+                    Our most coveted pieces — designed in our atelier and finished by hand. Each earring is a quiet celebration of craft, made to be worn for a lifetime and passed on.
+                </p>
+                <a href="shop.html" class="btn-dark inline-flex items-center gap-2">
+                    Discover More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5">
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream flex items-center justify-center">
+                        <img src="Assets/Image1.png" alt="Emerald Halo Stud" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Emerald Halo Stud</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹350.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹599.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream flex items-center justify-center">
+                        <img src="Assets/Image8.png" alt="Pearl Bow Drop" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Pearl Bow Drop</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹499.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹899.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== BEST SELLERS ===== -->
+    <section id="shop" class="bg-emerald-deep py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="text-center mb-14 space-y-4">
+                <p class="eyebrow">— Best Sellers</p>
+                <h2 class="section-title text-cream">
+                    Find the perfect <em class="text-gold italic font-normal">Earring</em> for you
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="product-card relative flex flex-col">
+                    <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider bg-emerald-deep text-cream">NEW</span>
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Image10.png" alt="Antique Pearl Jhumka" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Antique Pearl Jhumka</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹299.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹599.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card relative flex flex-col">
+                    <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider bg-gold text-ink">SALE</span>
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Image9.png" alt="Peach Cluster Jhumka" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Peach Cluster Jhumka</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹350.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹699.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card relative flex flex-col">
+                    <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider bg-emerald-deep text-cream">NEW</span>
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Image3.png" alt="Stud Earrings" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Silver Disc Stud Earrings</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹299.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹499.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card relative flex flex-col">
+                    <span class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider bg-gold text-ink">SALE</span>
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Image11.png" alt="Bahubali Jhumka" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Bahubali Jhumka</h4>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-gold font-semibold">₹499.00</span>
+                        <span class="text-ink/40 line-through text-sm">₹799.00</span>
+                    </div>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STYLE STATEMENT BANNER ===== -->
+    <section class="bg-emerald-darker">
+        <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2">
+
+            <div class="px-6 lg:px-16 py-20 flex flex-col justify-center space-y-6">
+                <p class="eyebrow">— Style Statement</p>
+                <h2 class="section-title text-cream">
+                    Get the best <em class="text-gold italic font-normal">jewelry</em>
+                    <br>for your style
+                </h2>
+                <p class="text-cream/70 max-w-md leading-relaxed">
+                    From everyday minimalism to bridal grandeur — Ashvika Luxe pieces are crafted to move with you, layer beautifully, and feel utterly yours.
+                </p>
+                <div>
+                    <a href="shop.html" class="btn-gold inline-flex items-center gap-2">
+                        Shop The Look
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative min-h-[500px] flex items-center justify-center overflow-hidden">
+                <div class="absolute w-[480px] h-[480px] rounded-full border border-gold/20"></div>
+                <div class="absolute w-[360px] h-[360px] rounded-full border border-gold/15"></div>
+                <div class="absolute inset-0 hero-spotlight"></div>
+                <img src="Assets/Third Model.png" alt="Model wearing Ashvika Luxe jewelry" loading="lazy" width="600" height="750" class="relative z-10 max-h-[600px] object-contain"/>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== OXIDIZED COLLECTION ===== -->
+    <section class="bg-emerald-deep py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+                <div class="space-y-4">
+                    <p class="eyebrow">— Heritage Silver</p>
+                    <h2 class="section-title text-cream">
+                        Discover the <em class="text-gold italic font-normal">Oxidized</em> Collection
+                    </h2>
+                </div>
+                <a href="shop.html" class="btn-outline-cream self-start inline-flex items-center gap-2">
+                    View All
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Image6.png" alt="Silver Bell Tassel" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Silver Bell Tassel</h4>
+                    <span class="text-gold font-semibold mt-1">₹299.00</span>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Black_Drops.jpg" alt="Black Drops" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Black Drops</h4>
+                    <span class="text-gold font-semibold mt-1">₹499.00</span>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button><button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Red_peacock.jpg" alt="Red Peacock Drop" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Red Peacock Drop</h4>
+                    <span class="text-gold font-semibold mt-1">₹499.00</span>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+                <div class="product-card flex flex-col">
+                    <div class="overflow-hidden rounded-xl aspect-square bg-cream">
+                        <img src="Assets/Gold-earing.png" alt="Bahubali Golden Jhumka" loading="lazy" width="300" height="300" class="product-img w-full h-full object-cover"/>
+                    </div>
+                    <h4 class="font-display text-lg text-ink mt-4">Bahubali Golden Jhumka</h4>
+                    <span class="text-gold font-semibold mt-1">₹599.00</span>
+                    <button class="btn-dark mt-4 w-full add-to-cart-btn">Add To Cart</button>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                        Wishlist
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section id="blog" class="bg-cream-light py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="text-center mb-14 space-y-4">
+                <p class="eyebrow">— Journal</p>
+                <h2 class="section-title text-ink">
+                    From our <em class="text-gold italic font-normal">blog</em>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <article class="bg-cream rounded-2xl overflow-hidden group flex flex-col" style="box-shadow:0 8px 24px -12px rgba(10,31,18,0.2);">
+                    <div class="overflow-hidden aspect-[4/3]">
+                        <img src="Assets/Festival.png" alt="How to Layer Jhumkas" loading="lazy" width="400" height="300" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <span class="eyebrow text-[10px] mb-2">Styling</span>
+                        <h4 class="font-display text-lg text-ink leading-snug mb-2">How to Layer Jhumkas For Festive Nights</h4>
+                        <p class="text-sm text-ink/60 mb-4 flex-1">A guide to mixing tradition with contemporary flair.</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-ink/10">
+                            <button class="text-xs uppercase tracking-wider text-ink font-semibold hover:text-gold transition-colors inline-flex items-center gap-1">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+                            <span class="text-xs text-ink/50">12 May 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-cream rounded-2xl overflow-hidden group flex flex-col" style="box-shadow:0 8px 24px -12px rgba(10,31,18,0.2);">
+                    <div class="overflow-hidden aspect-[4/3]">
+                        <img src="Assets/Workshop.png" alt="Oxidized Silver Making" loading="lazy" width="400" height="300" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <span class="eyebrow text-[10px] mb-2">Craft</span>
+                        <h4 class="font-display text-lg text-ink leading-snug mb-2">The Art of Oxidized Silver Making</h4>
+                        <p class="text-sm text-ink/60 mb-4 flex-1">Inside the workshops where heirlooms are born.</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-ink/10">
+                            <button class="text-xs uppercase tracking-wider text-ink font-semibold hover:text-gold transition-colors inline-flex items-center gap-1">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+                            <span class="text-xs text-ink/50">04 May 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-cream rounded-2xl overflow-hidden group flex flex-col" style="box-shadow:0 8px 24px -12px rgba(10,31,18,0.2);">
+                    <div class="overflow-hidden aspect-[4/3]">
+                        <img src="Assets/Bridal.png" alt="Bridal Earrings" loading="lazy" width="400" height="300" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <span class="eyebrow text-[10px] mb-2">Bridal</span>
+                        <h4 class="font-display text-lg text-ink leading-snug mb-2">Choosing The Perfect Bridal Earrings</h4>
+                        <p class="text-sm text-ink/60 mb-4 flex-1">A bride's complete guide to ear-game on her big day.</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-ink/10">
+                            <button class="text-xs uppercase tracking-wider text-ink font-semibold hover:text-gold transition-colors inline-flex items-center gap-1">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+                            <span class="text-xs text-ink/50">28 Apr 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-cream rounded-2xl overflow-hidden group flex flex-col" style="box-shadow:0 8px 24px -12px rgba(10,31,18,0.2);">
+                    <div class="overflow-hidden aspect-[4/3]">
+                        <img src="Assets/Trending studs.png" alt="Emerald Studs" loading="lazy" width="400" height="300" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <span class="eyebrow text-[10px] mb-2">Trends</span>
+                        <h4 class="font-display text-lg text-ink leading-snug mb-2">Why Emerald Studs Are Back in 2026</h4>
+                        <p class="text-sm text-ink/60 mb-4 flex-1">The gemstone that's quietly taking over.</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-ink/10">
+                            <button class="text-xs uppercase tracking-wider text-ink font-semibold hover:text-gold transition-colors inline-flex items-center gap-1">
+                                Read More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+                            <span class="text-xs text-ink/50">15 Apr 2026</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="bg-emerald-deep py-24">
+        <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+            <!-- Left Images -->
+            <div class="grid grid-cols-2 gap-5 items-center">
+                <div class="space-y-5">
+                    <div class="product-card" style="padding:0.75rem;">
+                        <div class="overflow-hidden rounded-lg aspect-square bg-cream">
+                            <img src="Assets/71zJZFz9mmL._AC_UY1100_.jpg" alt="New Arrivals" loading="lazy" width="250" height="250" class="product-img w-full h-full object-cover"/>
+                        </div>
+                        <p class="text-center text-xs uppercase tracking-widest text-ink font-semibold mt-3">New Arrivals</p>
+                    </div>
+                    <div class="product-card" style="padding:0.75rem;">
+                        <div class="overflow-hidden rounded-lg aspect-square bg-cream">
+                            <img src="Assets/Bridalcollection.jpg" alt="Bridal Collection" loading="lazy" width="250" height="250" class="product-img w-full h-full object-cover"/>
+                        </div>
+                        <p class="text-center text-xs uppercase tracking-widest text-ink font-semibold mt-3">Bridal Collection</p>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden aspect-[3/4] hidden md:block">
+                    <img src="Assets/Model.png" alt="Model" loading="lazy" width="400" height="533" class="w-full h-full object-cover"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-deep/60 to-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="space-y-6">
+                <p class="eyebrow">— Our Story</p>
+                <h2 class="section-title text-cream">
+                    The Ashvika Luxe Way<br>
+                    <em class="text-gold italic font-normal">Crafted with Passion</em>
+                </h2>
+                <p class="text-cream/70 leading-relaxed max-w-md">
+                    At Ashvika Luxe, every piece of oxidised silver jewellery is rooted in the art of fine craftsmanship. We work with skilled artisans who shape each piece with care and precision — blending traditional techniques with contemporary design. From effortless everyday wear to statement bridal collections, Ashvika Luxe brings you jewellery that is made to be felt, not just worn.
+                </p>
+                <div class="flex items-center gap-8 pt-2">
+                    <div>
+                        <p class="font-display text-3xl text-gold">100+</p>
+                        <p class="text-cream/60 text-xs uppercase tracking-wider mt-1">Unique Designs</p>
+                    </div>
+                    <div class="w-px h-12 bg-cream/20"></div>
+                    <div>
+                        <p class="font-display text-3xl text-gold">Pan India</p>
+                        <p class="text-cream/60 text-xs uppercase tracking-wider mt-1">Delivery</p>
+                    </div>
+                </div>
+                <a href="shop.html" class="btn-gold inline-flex items-center gap-2">
+                    Explore More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== INSTAGRAM GRID ===== -->
+    <section class="relative bg-cream-light">
+        <div class="grid grid-cols-3 md:grid-cols-6">
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/170390734942af7ca286cb8c54777d69b6c8c4a64e_thumbnail_750x999.webp" alt="Instagram 1" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/Image1.png" alt="Instagram 2" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/Gemini_Generated_Image_k3bfrnk3bfrnk3bf.png" alt="Instagram 3" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/Image8.png" alt="Instagram 4" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/Image7.png" alt="Instagram 5" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+            <div class="aspect-square overflow-hidden group relative">
+                <img src="Assets/Image5.png" alt="Instagram 6" loading="lazy" width="300" height="300" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-emerald-deep/0 group-hover:bg-emerald-deep/40 transition-colors"></div>
+            </div>
+        </div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+            <div class="w-28 h-28 rounded-full bg-emerald-deep border-4 border-cream-light flex flex-col items-center justify-center text-cream shadow-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gold">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+                <span class="text-[10px] uppercase tracking-widest mt-1">Instagram</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-14 bg-cream-light"></div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact" class="bg-emerald-darker text-cream pt-20 pb-8">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 pb-14" style="border-bottom:1px solid rgba(245,232,211,0.1);">
+
+                <!-- Brand -->
+                <div class="col-span-2 lg:col-span-1 space-y-4">
+                    <h3 class="font-display text-2xl tracking-[0.2em] uppercase">
+                        Ashvika<span class="text-gold">Luxe</span>
+                    </h3>
+                    <p class="text-cream/60 text-sm leading-relaxed">Heirloom jewelry, designed with love and made by hand in India.</p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="font-display text-lg">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="text-sm text-cream/60 hover:text-gold transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-sm text-cream/60 hover:text-gold transition-colors">About Us</a></li>
+                        <li><a href="shop.html" class="text-sm text-cream/60 hover:text-gold transition-colors">Shop</a></li>
+                        <li><a href="#blog" class="text-sm text-cream/60 hover:text-gold transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="text-sm text-cream/60 hover:text-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="space-y-4">
+                    <h4 class="font-display text-lg">Useful Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Shipping</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Privacy</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Terms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow -->
+                <div class="space-y-4">
+                    <h4 class="font-display text-lg">Follow Ashvika</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Instagram</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Pinterest</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">Facebook</a></li>
+                        <li><a href="#" class="text-sm text-cream/60 hover:text-gold transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-span-2 md:col-span-3 lg:col-span-1 space-y-4">
+                    <h4 class="font-display text-lg">Newsletter</h4>
+                    <p class="text-cream/60 text-sm">Get 10% off your first order.</p>
+                    <form class="flex border border-cream/20 rounded-full overflow-hidden" onsubmit="return false;">
+                        <input type="email" placeholder="Your email" class="flex-1 bg-transparent px-4 py-2 text-sm focus:outline-none" style="color:var(--cream);" />
+                        <button type="submit" class="bg-gold text-ink px-4 hover:bg-gold-soft transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                        </button>
+                    </form>
+                    <div class="pt-3">
+                        <p class="text-xs uppercase tracking-wider text-cream/50 mb-2">Payment Partners</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-[10px] px-2 py-1 border border-cream/20 rounded text-cream/70">VISA</span>
+                            <span class="text-[10px] px-2 py-1 border border-cream/20 rounded text-cream/70">MC</span>
+                            <span class="text-[10px] px-2 py-1 border border-cream/20 rounded text-cream/70">UPI</span>
+                            <span class="text-[10px] px-2 py-1 border border-cream/20 rounded text-cream/70">AMEX</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-cream/50">
+                <p>© 2026 Ashvika Luxe. All Rights Reserved. Crafted with love in India.</p>
+                <div class="flex gap-5">
+                    <a href="#" class="hover:text-gold transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-gold transition-colors">Terms</a>
+                    <a href="#" class="hover:text-gold transition-colors">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</main>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <span class="font-display text-xl tracking-widest text-cream uppercase">
+            Ashvika<span style="color:var(--gold)">Luxe</span>
+        </span>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+            </svg>
+        </button>
+    </div>
+    <nav class="mobile-nav">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="shop.html" class="mobile-nav-link">Shop</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+        <div class="flex gap-3 justify-center">
+            <a href="#" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all text-cream">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-gold hover:border-gold hover:text-ink transition-all text-cream">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PRODUCT MODAL ===== -->
+<div class="product-modal-overlay" id="productModalOverlay"></div>
+<div class="product-modal" id="productModal">
+    <button class="product-modal-close" id="productModalClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+        </svg>
+    </button>
+    <div class="product-modal-body">
+        <div class="product-modal-image-side">
+            <div class="product-modal-img-wrapper">
+                <img id="modalProductImg" src="" alt="Product"/>
+            </div>
+        </div>
+        <div class="product-modal-info-side">
+            <p class="eyebrow" id="modalProductCategory">— Ashvika Luxe</p>
+            <h2 class="product-modal-title" id="modalProductName">Product Name</h2>
+            <div class="product-modal-prices">
+                <span class="product-modal-price" id="modalProductPrice">₹0.00</span>
+                <span class="product-modal-old-price" id="modalProductOldPrice"></span>
+            </div>
+            <div class="product-modal-stars">
+                <span>⭐⭐⭐⭐⭐</span>
+                <span class="product-modal-reviews">(24 reviews)</span>
+            </div>
+            <p class="product-modal-desc">Handcrafted with love by skilled artisans. Each piece is unique and made to last a lifetime.</p>
+            <div class="product-modal-divider"></div>
+            <div class="product-modal-qty">
+                <span class="product-modal-qty-label">Quantity</span>
+                <div class="product-modal-qty-controls">
+                    <button class="modal-qty-btn" id="modalQtyMinus">−</button>
+                    <span class="modal-qty-num" id="modalQtyNum">1</span>
+                    <button class="modal-qty-btn" id="modalQtyPlus">+</button>
+                </div>
+            </div>
+            <div class="product-modal-actions">
+                <button class="product-modal-add-btn" id="modalAddToCart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>
+                    Add To Cart
+                </button>
+                <button class="product-modal-wishlist-btn" id="modalWishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </button>
+            </div>
+            <div class="product-modal-tags">
+                <span class="product-modal-tag">Handcrafted</span>
+                <span class="product-modal-tag">Pan India Delivery</span>
+                <span class="product-modal-tag">Authentic</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CART SIDEBAR ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart-btn" id="closeCart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+            </svg>
+        </button>
+    </div>
+    <div class="cart-items-container" id="cartItemsContainer"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+        <div class="cart-total-row">
+            <span>Total</span>
+            <span id="cartTotal">₹0.00</span>
+        </div>
+        <button class="checkout-btn" onclick="goToCheckout()">Proceed to Checkout</button>
+    </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+
+// ===== CART STATE =====
+let cart = [];
+let modalQty = 1;
+let modalCurrentProduct = {};
+
+// ===== DOM ELEMENTS =====
+const cartBtn        = document.getElementById('cartBtn');
+const cartSidebar    = document.getElementById('cartSidebar');
+const cartOverlay    = document.getElementById('cartOverlay');
+const closeCartBtn   = document.getElementById('closeCart');
+const cartBadge      = document.getElementById('cartBadge');
+const cartContainer  = document.getElementById('cartItemsContainer');
+const cartFooter     = document.getElementById('cartFooter');
+const cartTotalEl    = document.getElementById('cartTotal');
+const searchBtn      = document.getElementById('searchBtn');
+const searchDropdown = document.getElementById('searchDropdown');
+const searchInput    = document.getElementById('searchInput');
+const mobileMenuBtn  = document.getElementById('mobileMenuBtn');
+const mobileMenu     = document.getElementById('mobileMenu');
+const mobileOverlay  = document.getElementById('mobileMenuOverlay');
+const mobileClose    = document.getElementById('mobileMenuClose');
+const productModal   = document.getElementById('productModal');
+const modalOverlay   = document.getElementById('productModalOverlay');
+const modalClose     = document.getElementById('productModalClose');
+
+// ===== SEARCH =====
+searchBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    searchDropdown.classList.toggle('active');
+    if (searchDropdown.classList.contains('active')) {
+        setTimeout(() => searchInput.focus(), 100);
+    }
+});
+
+document.addEventListener('click', function(e) {
+    if (!searchDropdown.contains(e.target) && e.target !== searchBtn) {
+        searchDropdown.classList.remove('active');
+    }
+});
+
+searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+        const q = searchInput.value.trim();
+        if (q) {
+            searchDropdown.classList.remove('active');
+            searchInput.value = '';
+            document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+
+// ===== CART OPEN/CLOSE =====
+cartBtn.addEventListener('click', function() {
+    openCart();
+});
+
+function openCart() {
+    cartSidebar.classList.add('active');
+    cartOverlay.classList.add('active');
+    renderCart();
+}
+
+function closeCart() {
+    cartSidebar.classList.remove('active');
+    cartOverlay.classList.remove('active');
+}
+
+closeCartBtn.addEventListener('click', closeCart);
+cartOverlay.addEventListener('click', closeCart);
+
+// ===== MOBILE MENU =====
+mobileMenuBtn.addEventListener('click', function() {
+    mobileMenu.classList.add('active');
+    mobileOverlay.classList.add('active');
+});
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+}
+
+mobileClose.addEventListener('click', closeMobileMenu);
+mobileOverlay.addEventListener('click', closeMobileMenu);
+
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+    link.addEventListener('click', closeMobileMenu);
+});
+
+// ===== ADD TO CART =====
+document.querySelectorAll('.add-to-cart-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        const card = this.closest('.product-card');
+        if (!card) return;
+        const nameEl  = card.querySelector('h4') || card.querySelector('h3');
+        const priceEl = card.querySelector('.text-gold.font-semibold');
+        const imgEl   = card.querySelector('img');
+        const name    = nameEl  ? nameEl.textContent.trim()  : 'Product';
+        const price   = priceEl ? priceEl.textContent.trim() : '₹0';
+        const img     = imgEl   ? imgEl.src : '';
+        addToCart(name, price, img);
+        showFeedback(this);
+        openCart();
+    });
+});
+
+function addToCart(name, price, img) {
+    const existing = cart.find(item => item.name === name);
+    if (existing) {
+        existing.qty += 1;
+        showToast('success', 'Already in Cart!', name + ' quantity updated');
+    } else {
+        cart.push({ id: Date.now(), name, price, img, qty: 1 });
+        showToast('success', 'Added to Cart! 🛍️', name);
+    }
+    updateBadge();
+}
+
+// ===== FEEDBACK =====
+function showFeedback(btn) {
+    const original = btn.textContent;
+    btn.textContent = '✓ Added!';
+    btn.style.background = 'var(--gold)';
+    btn.style.color = 'var(--ink)';
+    setTimeout(function() {
+        btn.textContent = original;
+        btn.style.background = '';
+        btn.style.color = '';
+    }, 1200);
+}
+
+// ===== RENDER CART =====
+function renderCart() {
+    cartContainer.innerHTML = '';
+    if (cart.length === 0) {
+        cartFooter.style.display = 'none';
+        cartContainer.innerHTML = `
+            <div class="cart-empty">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 10a4 4 0 0 1-8 0"/>
+                    <path d="M3.103 6.034h17.794"/>
+                    <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/>
+                </svg>
+                <p>Your cart is empty</p>
+                <p style="font-size:12px;opacity:0.6;">Add some beautiful jewelry!</p>
+            </div>`;
+        return;
+    }
+    cartFooter.style.display = 'block';
+    let total = 0;
+    cart.forEach(function(item) {
+        const numPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+        total += numPrice * item.qty;
+        const el = document.createElement('div');
+        el.className = 'cart-item';
+        const itemId = Number(item.id);
+        el.innerHTML = `
+            <img class="cart-item-img" 
+                src="${item.img}" 
+                alt="${item.name || 'Product'}"
+                onerror="this.style.background='var(--cream-light)'"/>
+            <div class="cart-item-info">
+                <div class="cart-item-name">${item.name || 'Product'}</div>
+                <div class="cart-item-price">${item.price || '₹0'}</div>
+                <div class="cart-item-qty">
+                    <button class="qty-btn" onclick="changeQty(${itemId}, -1)">−</button>
+                    <span class="qty-num">${item.qty || 1}</span>
+                    <button class="qty-btn" onclick="changeQty(${itemId}, 1)">+</button>
+                </div>
+            </div>
+            <button class="cart-item-remove" onclick="removeItem(${itemId})">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+                </svg>
+            </button>`;
+        cartContainer.appendChild(el);
+    });
+    cartTotalEl.textContent = '₹' + total.toFixed(2);
+}
+
+// ===== QTY CHANGE =====
+function changeQty(id, delta) {
+    const item = cart.find(i => i.id === id);
+    if (!item) return;
+    item.qty += delta;
+    if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+    updateBadge();
+    renderCart();
+}
+
+// ===== REMOVE ITEM =====
+function removeItem(id) {
+    cart = cart.filter(i => i.id !== id);
+    updateBadge();
+    renderCart();
+}
+
+// ===== UPDATE BADGE =====
+function updateBadge() {
+    const count = cart.reduce((sum, item) => sum + item.qty, 0);
+    cartBadge.textContent = count;
+    cartBadge.style.display = count > 0 ? 'flex' : 'none';
+}
+
+// ===== PRODUCT MODAL OPEN =====
+function openProductModal(data) {
+    document.getElementById('modalProductImg').src          = data.img;
+    document.getElementById('modalProductImg').alt          = data.name;
+    document.getElementById('modalProductName').textContent = data.name;
+    document.getElementById('modalProductPrice').textContent= data.price;
+    document.getElementById('modalProductOldPrice').textContent = data.oldPrice || '';
+    modalQty = 1;
+    document.getElementById('modalQtyNum').textContent = 1;
+    modalCurrentProduct = data;
+    productModal.style.display = 'grid';
+    setTimeout(function() {
+        productModal.classList.add('active');
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }, 10);
+}
+
+// ===== PRODUCT MODAL CLOSE =====
+function closeProductModal() {
+    productModal.classList.remove('active');
+    modalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(function() {
+        productModal.style.display = 'none';
+    }, 400);
+}
+
+modalClose.addEventListener('click', closeProductModal);
+modalOverlay.addEventListener('click', closeProductModal);
+
+// ===== MODAL QTY =====
+document.getElementById('modalQtyMinus').addEventListener('click', function() {
+    if (modalQty > 1) {
+        modalQty--;
+        document.getElementById('modalQtyNum').textContent = modalQty;
+    }
+});
+
+document.getElementById('modalQtyPlus').addEventListener('click', function() {
+    modalQty++;
+    document.getElementById('modalQtyNum').textContent = modalQty;
+});
+
+// ===== MODAL ADD TO CART =====
+document.getElementById('modalAddToCart').addEventListener('click', function() {
+    const existing = cart.find(item => item.name === modalCurrentProduct.name);
+    if (existing) {
+        existing.qty += modalQty;
+        showToast('success', 'Cart Updated! 🛍️', modalCurrentProduct.name + ' x' + modalQty);
+    } else {
+        cart.push({
+            id: Date.now(),
+            name: modalCurrentProduct.name,
+            price: modalCurrentProduct.price,
+            img: modalCurrentProduct.img,
+            qty: modalQty
+        });
+        showToast('success', 'Added to Cart! 🛍️', modalCurrentProduct.name + ' x' + modalQty);
+    }
+    updateBadge();
+    closeProductModal();
+    openCart();
+});
+
+// ===== MODAL WISHLIST =====
+document.getElementById('modalWishlist').addEventListener('click', function() {
+    this.style.background = 'var(--gold)';
+    this.style.borderColor = 'var(--gold)';
+    this.style.color = 'var(--ink)';
+    setTimeout(() => {
+        this.style.background = '';
+        this.style.borderColor = '';
+        this.style.color = '';
+    }, 1500);
+});
+
+// ===== PRODUCT CARD CLICK - OPEN MODAL =====
+document.querySelectorAll('.product-card').forEach(function(card) {
+    const img      = card.querySelector('img');
+    const nameEl   = card.querySelector('h4') || card.querySelector('h3');
+    const priceEl  = card.querySelector('.text-gold.font-semibold');
+    const oldPrice = card.querySelector('.line-through');
+
+    if (img && nameEl) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            openProductModal({
+                img      : img.src,
+                name     : nameEl.textContent.trim(),
+                price    : priceEl ? priceEl.textContent.trim() : '₹0',
+                oldPrice : oldPrice ? oldPrice.textContent.trim() : ''
+            });
+        });
+
+        nameEl.style.cursor = 'pointer';
+        nameEl.addEventListener('click', function() {
+            openProductModal({
+                img      : img.src,
+                name     : nameEl.textContent.trim(),
+                price    : priceEl ? priceEl.textContent.trim() : '₹0',
+                oldPrice : oldPrice ? oldPrice.textContent.trim() : ''
+            });
+        });
+    }
+});
+
+// ===== SCROLL ANIMATION =====
+const animObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+        if (entry.isIntersecting) {
+            setTimeout(function() {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            }, i * 120);
+            animObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.product-card').forEach(function(card) {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    animObserver.observe(card);
+});
+
+// ===== ESC KEY =====
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeCart();
+        closeProductModal();
+        closeMobileMenu();
+        searchDropdown.classList.remove('active');
+    }
+});
+// ===== TOAST NOTIFICATION SYSTEM =====
+function showToast(type, title, message) {
+    const container = document.getElementById('toastContainer');
+
+    const icons = {
+        success  : `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>`,
+        wishlist : `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>`,
+        info     : `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>`
+    };
+
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.style.position = 'relative';
+    toast.style.overflow = 'hidden';
+    toast.innerHTML = `
+        <div class="toast-icon">${icons[type] || icons.info}</div>
+        <div class="toast-content">
+            <div class="toast-title">${title}</div>
+            <div class="toast-msg">${message}</div>
+        </div>
+        <button class="toast-close" onclick="removeToast(this.parentElement)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+            </svg>
+        </button>
+        <div class="toast-progress"></div>`;
+
+    container.appendChild(toast);
+
+    setTimeout(() => toast.classList.add('show'), 10);
+
+    const timer = setTimeout(() => removeToast(toast), 3000);
+    toast._timer = timer;
+}
+
+function removeToast(toast) {
+    if (!toast) return;
+    clearTimeout(toast._timer);
+    toast.classList.remove('show');
+    toast.classList.add('hide');
+    setTimeout(() => {
+        if (toast.parentElement) {
+            toast.parentElement.removeChild(toast);
+        }
+    }, 400);
+}
+// ===== WISHLIST BUTTONS =====
+document.querySelectorAll('.wishlist-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        const card   = this.closest('.product-card');
+        const nameEl = card.querySelector('h4') || card.querySelector('h3');
+        const name   = nameEl ? nameEl.textContent.trim() : 'Product';
+        const isActive = this.classList.contains('active');
+        if (isActive) {
+            this.classList.remove('active');
+            this.style.background  = '';
+            this.style.color       = '';
+            this.style.borderColor = '';
+            showToast('info', 'Removed from Wishlist', name);
+        } else {
+            this.classList.add('active');
+            this.style.background  = 'var(--gold)';
+            this.style.color       = 'var(--ink)';
+            this.style.borderColor = 'var(--gold)';
+            showToast('wishlist', 'Added to Wishlist! ❤️', name);
+        }
+    });
+});
+
+// ===== MOBILE NAV SMOOTH SCROLL =====
+document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            closeMobileMenu();
+            setTimeout(function() {
+                const target       = document.querySelector(href);
+                const headerHeight = 80;
+                if (target) {
+                    const targetPos = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    window.scrollTo({
+                        top     : targetPos,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 400);
+        }
+    });
+});
+// ===== GOTO CHECKOUT =====
+function goToCheckout() {
+    localStorage.setItem('ashvikaCart', JSON.stringify(cart));
+    window.location.href = 'checkout.html';
+}
+// ===== INIT =====
+updateBadge();
+
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target   = document.querySelector(targetId);
+        if (target) {
+            const headerHeight = 80;
+            const targetPos    = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            window.scrollTo({
+                top     : targetPos,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+<!-- ===== TOAST CONTAINER ===== -->
+<div class="toast-container" id="toastContainer"></div>
+</body>
+</html>
